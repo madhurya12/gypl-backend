@@ -1,15 +1,13 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
-import dotenv from 'dotenv'
+import 'dotenv/config'
 import participantRoutes from './routes/participantRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
 import eventRoutes from './routes/eventRoutes.js'
 import competitionRoutes from './routes/competitionRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import userEventRoutes from './routes/userEventRoutes.js'
-
-dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT || 5000
