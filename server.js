@@ -6,6 +6,8 @@ import participantRoutes from './routes/participantRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
 import eventRoutes from './routes/eventRoutes.js'
 import competitionRoutes from './routes/competitionRoutes.js'
+import authRoutes from './routes/authRoutes.js'
+import userEventRoutes from './routes/userEventRoutes.js'
 
 dotenv.config()
 
@@ -22,6 +24,8 @@ app.use('/api', participantRoutes)
 app.use('/api/admin', adminRoutes)
 app.use('/api/event', eventRoutes)
 app.use('/api/competitions', competitionRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userEventRoutes)
 
 // Health check
 app.get('/health', (req, res) => {
