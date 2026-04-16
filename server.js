@@ -31,7 +31,7 @@ app.get('/health', (req, res) => {
 })
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://testuser:1234@cluster0.3qtal8r.mongodb.net/')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('Connected to MongoDB')
   })
